@@ -156,6 +156,8 @@ header{
     border: solid 1px #ffc222;
     border-right-width: 20px;
     position: relative;
+    z-index: 2;
+    outline: none;
 }
 .default-btn:after{
     content: "\f105";
@@ -165,4 +167,122 @@ header{
     top: 50%;
     transform: translateY(-50%);
     color: #fff;
+}
+.slider_inner{
+    position: relative;
+}
+.slick-btn.slick-disabled{
+    background-color: transparent;
+    cursor: default;
+}
+.slick-btn{
+    position: absolute;
+    top: 70%;
+    z-index: 3;
+    width: 40px;
+    height: 40px;
+    border: solid 1px #fff;
+    cursor: pointer;
+    outline: none;
+    background-color: #ffc222;
+}
+.slick-btn:before{
+    position: absolute;
+    right: 50%;
+    top: 50%;  
+    transform: translate(50%, -50%);
+    font-family: 'icomoon';
+    color: #fff;
+}
+.slick-next:before{
+    content: "\f105";
+}
+.slick-next{
+    right: 0;
+}
+.slick-prev:before{
+    content: "\f104";
+}
+.slick-prev{
+    left: 0;
+}
+.services{
+    padding: 50px 0px 30px;
+}
+.service_top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+.service_title-box{
+    padding-left: 140px;
+    max-width: 520px;
+    position: relative;
+}
+.service_title-box:before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100px;
+    background-color: #ffc222;
+    left: 0;
+    top: 10px;
+}
+.service_title{
+    font-weight: 500;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 24px;
+    color: #212020;
+    margin-bottom: 10px;
+}
+.service_text{
+    letter-spacing: 0.1px;
+}
+.service_btn a{
+    color: #373636;
+    line-height: 24px;
+    letter-spacing: .25px;
+    padding: 5px 38px;
+    border: solid 3px #e6e6e6;
+}
+.services_items{
+    display: flex;
+    justify-content: space-between;
+}
+.service_item{
+    max-width: 360px;
+    text-align: center;
+    padding: 30px 0px 80px;
+    position: relative;
+    min-height: 375px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 7px 24.3px 2.7px rgba(91, 89, 89, 0.14);
+}
+.service_item-title{
+    color: #212020;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    padding: 24px 0px;
+}
+.service_item-text{
+    letter-spacing: 0.1px;
+    padding: 0px 30px 30px;
+}
+.service_item-btn{
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+}
+.service_item-btn .default-btn{
+    color: #373636;
+}
+.service_item-link{
+    color: #050505;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: solid 1px #050505;
+    margin-right: 60px;
 }
