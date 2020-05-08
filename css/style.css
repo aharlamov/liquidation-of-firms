@@ -375,10 +375,10 @@ header{
     padding: 10px;
     height: 207px;
     resize: none;
+    margin-bottom: 44px;
 }
 .form_box-inner button{
     background-color: transparent;
     color: #282828;
-    margin-top: 44px;
     float: right;
 }
